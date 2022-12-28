@@ -1,86 +1,82 @@
+import java.util.Scanner;
+
 public class TwelveDaysOfChristmas {
+    private static String numberOfDays;
 
-        private static int day;
-
-        private static String numberOfDays;
-        private static String firstVerse;
-        private static String secondVerse;
-        private static String thirdVerse;
-        private static String fourthVerse;
-        private static String fifthVerse;
-        private static String sixthVerse;
-        private static String seventhVerse;
-        private static String eightVerse;
-        private static String ninthVerse;
-        private static String tenthVerse;
-        private static String eleventhVerse;
-        private static String twelfthVerse;
     public static String getFirstVerse() {
-            firstVerse = "A partridge in a pear tree";
-            return firstVerse;
+        return "A partridge in a pear tree";
         }
         public static String getSecondVerse() {
-            secondVerse = "Two turtledoves";
-            return secondVerse;
+            return "Two turtledoves";
         }
         public static String getThirdVerse() {
-            thirdVerse = "Three French hens";
-            return thirdVerse;
+            return "Three French hens";
         }
         public static String getFourthVerse() {
-            fourthVerse = "Four calling birds";
-            return fourthVerse;
+            return "Four calling birds";
         }
         public static String getFifthVerse() {
-            fifthVerse = "Five gold rings (five golden rings)";
-            return fifthVerse;
+            return "Five gold rings (five golden rings)";
         }
         public static String getSixthVerse() {
-            sixthVerse = "Six geese a-laying";
-            return sixthVerse;
+            return "Six geese a-laying";
         }
         public static String getSeventhVerse() {
-            seventhVerse = "Seven swans a-swimming";
-            return seventhVerse;
+            return "Seven swans a-swimming";
         }
         public static String getEightVerse() {
-            eightVerse = "Eight maids a-milking";
-            return eightVerse;
+            return "Eight maids a-milking";
         }
         public static String getNinthVerse() {
-            ninthVerse = "Nine ladies dancing";
-            return ninthVerse;
+            return "Nine ladies dancing";
         }
         public static String getTenthVerse() {
-            tenthVerse = "Ten lords a-leaping";
-            return tenthVerse;
+            return "Ten lords a-leaping";
         }
         public static String getEleventhVerse() {
-            eleventhVerse = "Eleven Pipers Piping";
-            return eleventhVerse;
+            return "Eleven Pipers Piping";
         }
         public static String getTwelfthVerse() {
-            twelfthVerse = "Twelve drummers drumming";
-            return twelfthVerse;
+            return "Twelve drummers drumming";
         }
         public void DaysOfChristmas(){
-            int day = 1;
+
+        int day = 1;
             while (day <= 12) {
 
                 switch (day) {
-                    case 1 -> numberOfDays = "first";
-                    case 2 -> numberOfDays = "second";
-                    case 3 -> numberOfDays = "third";
-                    case 4 -> numberOfDays = "fourth";
-                    case 5 -> numberOfDays = "fifth";
-                    case 6 -> numberOfDays = "sixth";
-                    case 7 -> numberOfDays = "seventh";
-                    case 8 -> numberOfDays = "eight";
-                    case 9 -> numberOfDays = "ninth";
-                    case 10 -> numberOfDays = "tenth";
-                    case 11 -> numberOfDays = "eleventh";
-                    case 12 -> numberOfDays = "twelfth";
+                    case 1: numberOfDays = "first";
+                    break;
+                    case 2: numberOfDays = "second";
+                    break;
+                    case 3: numberOfDays = "third";
+                    break;
+                    case 4: numberOfDays = "fourth";
+                    break;
+                    case 5: numberOfDays = "fifth";
+                    break;
+                    case 6 : numberOfDays = "sixth";
+                    break;
+                    case 7: numberOfDays = "seventh";
+                    break;
+                    case 8 : numberOfDays = "eight";
+                    break;
+                    case 9 : numberOfDays = "ninth";
+                    break;
+                    case 10 : numberOfDays = "tenth";
+                    break;
+                    case 11: numberOfDays = "eleventh";
+                    break;
+                    case 12: numberOfDays = "twelfth";
+                    break;
                 }
+
+                System.out.println("\n"+"Enter a day of Christmas between 1 - 12");
+
+                Scanner scanner = new Scanner(System.in);
+
+                day = scanner.nextInt();
+
                 System.out.println("\n"+"On the " + numberOfDays + " day of Christmas my true love gave to me :");
 
                 switch(day) {
