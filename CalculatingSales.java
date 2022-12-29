@@ -1,34 +1,20 @@
 import java.util.Scanner;
 
 public class CalculatingSales {
-    private double product1Total;
-    private double product2Total;
-    private double product3Total;
-    private double product4Total;
-    private double product5Total;
-    private int numberOfProducts;
+    private double product1Total = 0;
+    private double product2Total = 0;
+    private double product3Total = 0;
+    private double product4Total = 0;
+    private double product5Total = 0;
     private int productNumber;
     private double totalAmount;
     public void SalesCalculation(){
         Scanner input = new Scanner(System.in);
-
-        product1Total = 0;
-
-        product2Total = 0;
-
-        product3Total = 0;
-
-        product4Total = 0;
-
-        product5Total = 0;
-
-        System.out.print("How many products do you want to buy? ");
-        numberOfProducts = input.nextInt();
+        System.out.println("Enter Products between 1 - 5; Enter -1 to terminate purchase");
 
         int counter = 1;
 
-        while(counter <= numberOfProducts) {
-
+        while(productNumber != -1) {
             System.out.printf("Enter Product %d number ", counter);
             productNumber = input.nextInt();
 
@@ -41,10 +27,8 @@ public class CalculatingSales {
                 case 3 -> product3Total = 9.98 * qty;
                 case 4 -> product4Total = 4.49 * qty;
                 case 5 -> product5Total = 6.87 * qty;
-                default -> {
-                    System.out.print("Invalid Product");
-                    continue;
-                }
+                default ->
+                    System.out.println("You have successfully ended your purchase");
             }
             counter++;
         }
